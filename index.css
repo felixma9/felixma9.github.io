@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(58, 28, 180);
+    color: #ffffff;
+    font-family: 'Outfit';
+    font-size: 20px;
+}
+
+.name {
+    font-size: 50px;
+    text-align: center;
+}
+
+.blurb {
+    font-size: 35px;
+    text-align: center;
+}
+
+.socials {
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Outfit';
+}
+
+.social-link {
+    font-size: 30px;
+    margin: 10px;
+    color: white;
+}
