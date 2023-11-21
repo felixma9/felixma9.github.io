@@ -31,7 +31,7 @@
             var net = undefined;
 
             canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            canvas.height = 700;
 
             var nodesLength = Math.floor(canvas.width*canvas.height/3000);
             
@@ -74,7 +74,7 @@
             }
 
             draw() {
-                context.fillStyle = "#030303";
+                context.fillStyle = "#0c0d23";
                 context.fillRect(0, 0, canvas.width, canvas.height);
                 
                 for (var i = 0; i < this.length; i++) {
