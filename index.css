@@ -11,10 +11,10 @@ body {
     color: #ffffff;
     font-family: 'Outfit';
     font-size: 20px;
-    padding-left: 5rem;
+    /* padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 10rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; */
 }
 
 ul {
@@ -31,19 +31,24 @@ ul {
 }
 
 #inner_heading-canvas {
-
 }
 
 .header-text-name {
     position: absolute;
-    top: 10%; /* Adjust as necessary */
-    left: 5%; /* Center the text horizontally */
+    top: 10rem; /* Adjust as necessary */
+    left: 5rem; /* Center the text horizontally */
+    right: 5rem;
     transform: translate(-50%, -50%); /* Align the center of the text with its position */
     z-index: 10; /* Ensure the text is above the canvas */
 
     /* Additional styling for your text */
     color: white;
-    text-align: center;
+}
+
+.header-text-socials {
+    position: absolute;
+    top: 24rem;
+    left: 5rem;
 }
 
 .blurb {
@@ -51,10 +56,18 @@ ul {
     text-align: left;
 }
 
+.header-text-blurb {
+    position: absolute;
+    top: 15rem;
+    left: 5.5rem;
+    right: 3rem;
+}
+
 .socials {
     text-align: left;
     font-family: 'Outfit';
     padding-bottom: 5%;
+    z-index: 10;
 }
 
 @media screen and (max-width: 740px) {
@@ -65,8 +78,12 @@ ul {
         padding-left: 0;
     }
     
-    .blurb {
+    .header-text-blurb {
         text-align: left;
+    }
+
+    .header-text-socials {
+        top: 29rem;
     }
 }
 
