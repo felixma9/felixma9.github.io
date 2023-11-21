@@ -1,28 +1,158 @@
 body {
-    background-color: rgb(58, 28, 180);
+    background-color: white;
+    color: rgb(12, 13, 35);
+    font-family: 'Outfit';
+    font-size: 20px;
+    margin: 0;
+}
+
+.top {
+    background-color: rgb(12, 13, 35);
     color: #ffffff;
     font-family: 'Outfit';
     font-size: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+ul {
+    font-size: 20px
 }
 
 .name {
-    font-size: 50px;
+    font-size: 60px;
+    text-align: left;
+}
+
+.canvas-container {
+    position: relative;
+}
+
+#inner_heading-canvas {
+
+}
+
+.header-text-name {
+    position: absolute;
+    top: 10%; /* Adjust as necessary */
+    left: 5%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Align the center of the text with its position */
+    z-index: 10; /* Ensure the text is above the canvas */
+
+    /* Additional styling for your text */
+    color: white;
     text-align: center;
 }
 
 .blurb {
     font-size: 35px;
-    text-align: center;
+    text-align: left;
 }
 
 .socials {
     text-align: left;
-    margin-left: 20px;
     font-family: 'Outfit';
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width: 740px) {
+    .socials {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    
+    .blurb {
+        text-align: left;
+    }
 }
 
 .social-link {
     font-size: 30px;
     margin: 10px;
-    color: white;
+    color: #d1d1d1;
+}
+
+.social-link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.divider {
+    margin: 3% 5%;
+    border-bottom: 1px solid white;
+}
+
+.text-shadow-pop-bl {
+	-webkit-animation: text-shadow-pop-bl 0.6s both;
+	        animation: text-shadow-pop-bl 0.6s both;
+    margin: 0;
+    padding-top: 25px;
+}
+
+
+ @-webkit-keyframes text-shadow-pop-bl {
+    0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      text-shadow: -1px 1px #555555, -2px 2px #555555, -3px 3px #555555, -4px 4px #555555, -5px 5px #555555, -6px 6px #555555, -7px 7px #555555, -8px 8px #555555;
+      -webkit-transform: translateX(8px) translateY(-8px);
+              transform: translateX(8px) translateY(-8px);
+    }
+  }
+  @keyframes text-shadow-pop-bl {
+    0% {
+      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      text-shadow: -1px 1px #555555, -2px 2px #555555, -3px 3px #555555, -4px 4px #555555, -5px 5px #555555, -6px 6px #555555, -7px 7px #555555, -8px 8px #555555;
+      -webkit-transform: translateX(8px) translateY(-8px);
+              transform: translateX(8px) translateY(-8px);
+    }
+  }
+  
+
+.section {
+    text-align: left;
+    font-size: 30px;
+    padding: 0 7%;
+}
+
+.section-title {
+    /* text-decoration: underline; */
+}
+
+img {
+    width: 25rem;
+}
+
+.education-entry {
+    padding-left: 3rem;
+    margin: 0;
+    font-size: 30px;
+}
+
+.education-body {
+    padding-left: 3rem;
+    font-size: 20px;
+    margin: 0;
+}
+
+.experience-entry {
+    padding-top: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+.experience-body {
+    font-size: 20px;
+    margin: 0;
 }
