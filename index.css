@@ -207,3 +207,58 @@ img {
     font-size: 20px;
     margin: 0;
 }
+
+.clash-course-image {
+    /* border-radius: 20px;
+    transition: 0.1s; */
+}
+
+/* .clash-course-image:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.15s;
+    box-shadow: #1a1c4c;
+} */
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns */
+    border-color: #1a1c4c;
+    border-style: solid;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.15s;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.project-container:hover {
+    border-color: rgb(30, 30, 30);
+    border-style: solid;
+    box-shadow: 0 0 10px rgb(30, 30, 30);
+    transform: scale(1.01);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .project-container {
+        grid-template-columns: 1fr; /* Stack vertically on small screens */
+    }
+}
+
+.project-image a {
+    display: block; /* Or 'inline-block' */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    overflow: hidden; /* To handle excess parts of the image if any */
+}
+
+.clash-course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will cover the area without distorting the image */
+}
