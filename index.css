@@ -192,8 +192,51 @@ img {
 }
 
 .education-body {
+    font-size: 25px;
+    margin: 0;
+}
+
+.relevant-courses {
     font-size: 20px;
     margin: 0;
+}
+
+.read-more-state {
+    display: none;
+}
+  
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    transition: .25s ease;
+}
+  
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    padding-bottom: 1rem;
+    padding-left: 1.2rem;
+}
+  
+.read-more-state ~ .read-more-trigger:before {
+    content: 'Show more \FE3E';
+    font-size: 20px;
+}
+  
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less \FE3D';
+    font-size: 20px;
+}
+  
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
 }
 
 .experience-entry {
@@ -211,6 +254,12 @@ img {
     border-radius: 20px;
     transition: 0.1s;
     max-width: 26rem;
+}
+
+.os161-image {
+    border-radius: 20px;
+    transition: 0.1s;
+    max-width: 15rem;
 }
 
 /* .clash-course-image:hover {
