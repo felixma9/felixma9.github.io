@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/01f2ccd484.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<title>Felix's Website</title>
+
+<div class="top">
+    <h1 class="name text-shadow-pop-bl header-text-name">
+        Felix Ma
+    </h1>
+    
+    <h2 class="blurb header-text-blurb">Welcome! I'm a Computer Engineering student at the University of British Columbia. Please take a look around!
+    </h2>
+
+    <div class="socials header-text-socials">
+        <a class="social-link" style="text-decoration: none" href="./Resume.pdf" target="_blank"><i class="fa-regular fa-file"></i> Resume</a>
+        <a class="social-link" style="text-decoration: none" href="https://www.linkedin.com/in/felix-hx-ma/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a class="social-link" style="text-decoration: none" href="https://github.com/felixma9/" target="_blank"><i class="fa-brands fa-square-github"></i> GitHub</a>
+    </div>
+</div>
+
+<div class="section">
+    <h3 class="section-title">Education</h3>
+    <img src="./Assets/UBC-banner.png" alt="UBC logo">
+    <div>
+        <p class="education-entry">University of British Columbia</p>
+        <span class="dates">2021 - 2027</span>
+        <p class="education-body">Bachelor of Applied Science in Computer Engineering</p>
+    </div>
+    <span class="relevant-courses">Relevant Courses:</span>
+    <div>
+        <input type="checkbox" class="read-more-state" id="post-2" />
+      
+        <ul class="read-more-wrap">
+            <li>Algorithms and Data Structures</li>
+            <li>Algorithm Design and Analysis</li>
+            <li class="read-more-target">Operating Systems</li>
+            <li class="read-more-target">Software Systems</li>
+            <li class="read-more-target">Computing Hardware I/II</li>
+            <li class="read-more-target">Human Computer Interfaces in Engineering Design</li>
+            <li class="read-more-target">Circuit Analysis</li>
+            <li class="read-more-target">Mathematical Proofs</li>
+        </ul>
+        
+        <label for="post-2" class="read-more-trigger"></label>
+      </div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+    <h3 class="section-title">Technical Experience</h3>
+    <img src="./Assets/toch-logo.png" alt="TochTech Logo">
+    <p class="experience-entry">
+        Software Testing Co-op - TochTech Technologies
+    </p>
+    <span class="dates">
+        May - September 2023
+    </span>
+    <ul>
+        <li>Designed and conducted 3 trials comparing proprietary sleep-tracking hardware against competitors' devices</li>
+        <li>Tested software and wrote Excel spreadsheets to report any bugs found, working closely with developers</li>
+        <li>Utilized Jira for tracking and managing testing and development tasks, enhancing team coordination and project
+            management</li>
+    </ul>
+
+    <img src="./Assets/output-onlinepngtools.png" alt="LaunchPad Logo" class="launchpad-logo">
+    <p class="experience-entry">
+        Software Developer - UBC LaunchPad
+    </p>
+    <span class="dates">
+        September 2022 - Present
+    </span>
+    <ul>
+        <li>Aided in the implementation of a React JS application for the team</li>
+        <li>Wrote code in GoLang integrating Amazon AWS web-scraping technology into our project</li>
+        <li>Utilized Jira for tracking and managing testing and development tasks, enhancing team coordination and project
+            management</li>
+    </ul>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+    <h3 class="section-title">Projects</h3>
+
+    <img src="./Assets/clash-course-logo-darker.png" alt="clash course screenshot" class="clash-course-image">
+
+    <p class="experience-entry">
+        Clash Course - UBC Course Scheduler
+    </p>
+
+    <p class="skills">
+        <i class="fa-brands fa-html5"></i><span> HTML |</span>
+        <i class="fa-brands fa-css3-alt"></i><span> CSS |</span>
+        <i class="fa-brands fa-js"></i><span> JS |</span>
+        <i class="fa-brands fa-git"></i><span> Git |</span>
+        <i class="fa-brands fa-github"></i><span> GitHub |</span>
+        <i class="fa-brands fa-figma"></i><span> Figma</span>
+    </p>
+
+    <p class="project-description">
+        Full-stack web application assisting students in visualizing course schedules and catching potential conflicts.
+        <ul>
+            <li>
+                Developed with HTML, CSS, and JS, with a focus on user experience and accessibility
+            </li>
+            <li>
+                <div class="button_cont">
+                    <a class="example_f" href="https://github.com/felixma9/worklist_helper" target="_blank" rel="nofollow">
+                        <span>View repository</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </p>
+
+    <div class="learn-more-container">
+        <div class="button-cont">
+            <a href="http://clashcourse.online/" target="_blank" class="example_f" rel="nofollow">
+                <span class="learn-more">Test it out!</i></span>
+            </a>
+        </div>
+    </div>
+
+    <img src="./Assets/OS161-logo.png" alt="os161 logo" class="os161-image">
+
+    <p class="experience-entry">
+        OS161 Implementation
+    </p>
+
+    <p class="skills">
+        <i class="fa-solid fa-code"></i><span> C |</span>
+        <i class="fa-solid fa-bug-slash"></i><span> GDB |</span>
+        <i class="fa-solid fa-terminal"></i> SSH |</span>
+        <i class="fa-brands fa-linux"></i> Linux |</span>
+        <i class="fa-brands fa-git"></i><span> Git |</span>
+        <i class="fa-brands fa-github"></i><span> GitHub</span>
+    </p>
+
+    <p class="project-description">
+        OS161 is an educational operating system originally developed by Harvard University. As a part of my coursework I implemented and rigorously debugged/optimized various operating system functionalities in C, including:
+        <ul>
+            <li>
+                Synchronization primitives
+            </li>
+            <li>
+                Memory/file management
+            </li>
+            <li>
+                System calls
+            </li>
+            <li>
+                Details of implementation upon request
+            </li>
+        </ul>
+    </p>
+
+    <img src="./Assets/RISC-machine-logo.png" alt="RISC machine logo" class="risc-image">
+
+    <p class="experience-entry">
+        RISC Machine Implementation
+    </p>
+
+    <p class="skills">
+        <i class="fa-solid fa-code"></i><span> SystemVerilog |</span>
+        <i class="fa-solid fa-microchip"></i></i><span> FPGA |</span>
+        <i class="fa-solid fa-sitemap"></i></i> Quartus |</span>
+        <i class="fa-brands fa-folder"></i><span> ModelSim</span>
+    </p>
+
+    <p class="project-description">
+        16-bit Turing-complete Reduced Instruction Set Computer (RISC) machine. Implemented on a Field Programmable Gate Array (FPGA) board, the RISC machine had:
+        <ul>
+            <li>
+                Finite state machine controller
+            </li>
+            <li>
+                Random access memory
+            </li>
+            <li>
+                Datapath
+            </li>
+            <li>
+                Details of implementation upon request
+            </li>
+        </ul>
+    </p>
+    
+
+    <!-- <div class="projects-wrapper">
+        <div class="project-container">
+            <a href="https://github.com/felixma9/worklist_helper" target="_blank" class="clash-course-img">
+                <img src="./Assets/clash-course-img-2nd-screen.PNG" alt="clash course screenshot" class="clash-course-image">
+            </a>
+            <div>
+                <p class="project-entry">Clash Course - UBC Course Scheduler</p>
+                <p class="skills">
+                    <i class="fa-brands fa-html5"></i><span> HTML |</span>
+                    <i class="fa-brands fa-css3-alt"></i><span> CSS |</span>
+                    <i class="fa-brands fa-js"></i><span> JS |</span>
+                    <i class="fa-brands fa-git"></i><span> Git |</span>
+                    <i class="fa-brands fa-github"></i><span> GitHub</span>
+                </p>
+                <span class="dates project-dates clash-course-dates">May - August 2023</span>
+                <ul>
+                    <li>Full-stack web application to assist in visualizing university course schedules</li>
+                    <li>Utilized Git/GitHub for collaboration, gaining experience in code sourcing and managing skills</li>
+                    <li>Designed website layout and UI elements in HTML and CSS based on data gathered from peers</li>
+                </ul>
+                <p class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            
+        </div>
+
+        <div class="project-container project-container-os161" title="OS161 source code is copyrighted; further details about &#013;implementations or experience available upon request">
+            <div>
+                <p class="project-entry">OS161</p>
+                <span class="dates project-dates clash-course-dates">September - December 2023</span>
+                <p class="skills">
+                    <i class="fa-solid fa-code"></i><span> C |</span>
+                    <i class="fa-solid fa-bug-slash"></i><span> GDB |</span>
+                    <i class="fa-solid fa-terminal"></i> SSH |</span>
+                    <i class="fa-brands fa-linux"></i> Linux |</span>
+                    <i class="fa-brands fa-git"></i><span> Git |</span>
+                    <i class="fa-brands fa-github"></i><span> GitHub</span>
+                </p>
+                <ul>
+                    <li>Demonstrated proficiency with C data structures and algorithms to write file management and system calls in OS161</li>
+                    <li>Implemented core subsystems in OS161, including synchronization, process signaling, and memory management</li>
+                    <li>Leveraged GDB to perform kernel debugging, using GDB functionality to isolate and resolve faults in OS161</li>
+                </ul>
+                <p class="learn-more learn-more-left">Learn More <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <a href="https://people.ece.ubc.ca/~os161/os161-site/" target="_blank">
+                <img src="./Assets/os161-screenshot-cropped.PNG" alt="OS161 screenshot" class="clash-course-image">
+            </a>
+        </div>
+
+        <div class="project-container project-container-twitter-api">
+            <a href="https://github.com/felixma9/Social-Media-Curation" target="_blank" class="clash-course-img"><img src="./Assets/pngimg.com - twitter_PNG15.png" alt="twitter logo" class="clash-course-image"></a>
+            <div>
+                <p class="project-entry">Publisher/Subscriber system with Twitter API</p>
+                <p class="skills">
+                    <i class="fa-brands fa-java"></i><span> Java |</span>
+                    <i class="fa-regular fa-window-maximize"></i><span> IntelliJ |</span>
+                    <i class="fa-solid fa-magnifying-glass"></i><span> JUnit |</span>
+                    <i class="fa-brands fa-git"></i><span> Git |</span>
+                    <i class="fa-brands fa-github"></i><span> GitHub |</span>
+                    <i class="fa-brands fa-twitter"></i><span> Twitter API</span>
+                </p>
+                <span class="dates project-dates clash-course-dates">November - December 2022</span>
+                <ul>
+                    <li>Implemented Message Queue and Publisher-Subscriber system using Twitter API for data handling and distribution</li>
+                    <li>Designed scalable architecture to efficiently manage high data volumes, demonstrating skills in system design</li>
+                    <li>Ensured system reliability and efficiency through comprehensive testing and optimization</li>
+                </ul>
+                <p class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+        </div>
+
+        <div class="project-container project-container-searchbar">
+            <div>
+                <p class="project-entry">N-Gram Search Engine</p>
+                <span class="dates project-dates clash-course-dates">October - November 2022</span>
+                <p class="skills">
+                    <i class="fa-brands fa-java"></i><span> Java |</span>
+                    <i class="fa-regular fa-window-maximize"></i><span> IntelliJ |</span>
+                    <i class="fa-solid fa-magnifying-glass"></i><span> JUnit |</span>
+                    <i class="fa-brands fa-git"></i><span> Git |</span>
+                    <i class="fa-brands fa-github"></i><span> GitHub |</span>
+                </p>
+                <ul>
+                    <li>Built core functionalities of a search engine with Java, including auto-completion, sentiment analysis, and data analysis</li>
+                    <li>Employed clear and concise communication techniques to teach complex concepts to young learners</li>
+                    <li>Worked collaboratively with instructors and parents to ensure a cohesive and effective educational experience</li>
+                </ul>
+                <p class="learn-more learn-more-left">Learn More <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <a href="https://github.com/felixma9/Search-Engine" target="_blank">
+                <img src="./Assets/searchbar2-white (1).png" alt="searchbar" class="clash-course-image">
+            </a>
+        </div>
+        
+
+    </div> -->
+</div>
+
+<hr class="divider">
+<p class="footer">Thanks for visiting!</p>
+
+<script src="script.js"></script>
+</body>
+</html>
