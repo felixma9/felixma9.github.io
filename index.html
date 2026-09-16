@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felix Ma — Resume</title>
+  <meta name="description" content="Felix Ma's resume">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="header-text-name">
-        <h1>Felix Ma</h1>
-        <p>Software Engineer</p>
+  <header class="site-header">
+    <div class="header-text">
+      <h1>Felix Ma</h1>
+      <p>Computer Engineering @ UBC</p>
     </div>
+    <a class="download-btn" href="Resume.pdf" download>Download PDF</a>
+  </header>
+
+  <main class="pdf-wrap">
+    <object data="Resume.pdf" type="application/pdf" class="pdf-viewer">
+      <p class="fallback">
+        Your browser can't display the PDF inline.
+        <a href="Resume.pdf" download>Download the resume</a> instead.
+      </p>
+    </object>
+  </main>
 </body>
+</html>
